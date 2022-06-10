@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1001,
+        "genre": "✍️ Article",
+        "postImgUrl": "https://i.ibb.co/CvCSr4K/image-2022-06-11-022058156.png",
+        "title": "What if famous brands had regular fonts? Meet RegulaBrands!",
+        "body": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+        "location": "",
+        "others": "",
+        "views": "1.4k",
+        "postedBy": "Sarthak Kamra",
+        "userImgUrl": "https://i.ibb.co/BnhLTW5/image.png"
+    },
+
+    {
+        "id": 1002,
+        "genre": "🔬️ Education",
+        "postImgUrl": "https://i.ibb.co/MG1s9sN/image.png",
+        "title": "Tax Benefits for Investment under National Pension Scheme launched by Government",
+        "body": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+        "location": "",
+        "others": "",
+        "views": "1.4k",
+        "postedBy": "Sarah West",
+        "userImgUrl": "https://i.ibb.co/q9pr3q1/image.png"
+    },
+
+    {
+        "id": 1003,
+        "genre": "🗓️ Meetup",
+        "postImgUrl": "https://i.ibb.co/crzvX2Q/image.png",
+        "title": "Finance & Investment Elite Social Mixer @Lujiazui",
+        "body": "",
+        "location": "Ahmedabad, India",
+        "others": "Fri, 12 Oct, 2018",
+        "views": "1.4k",
+        "postedBy": "Ronal Jones",
+        "userImgUrl": "https://i.ibb.co/YBnZNzc/image.png"
+    },
+
+    {
+        "id": 1004,
+        "genre": "💼️ Job",
+        "postImgUrl": "",
+        "title": "Software Developer",
+        "body": "",
+        "location": "Noida, India",
+        "others": "Innovaccer Analytics Private Ltd.",
+        "views": "1.4k",
+        "postedBy": "Joseph Gray",
+        "userImgUrl": "https://i.ibb.co/3BhTYZ7/image.png"
+    }
+]

@@ -1,0 +1,94 @@
+/*----------------------------
+        Post Card Design
+-----------------------------*/
+.post_card + .post_card{
+    margin-top: 16px;
+}
+
+.post_card_genre{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.post_card_title{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.post_card_title_btn:hover{
+    background-color: #BFBFC0;
+}
+
+.post_card_title_icon{
+    height: 20px;
+    width: 20px;
+}
+
+.post_card_body{
+    font-size: 19px;
+    color: #5c5c5c;
+    margin-top: 12px;
+}
+
+.post_card_others{
+font-weight: 500;
+    font-size: 15px
+}
+
+.post_card_location{
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 64px;
+}
+
+.post_card_btn,
+.post_card_btn_alt{
+    width: 100%;
+    border-color: #A9AEB8;
+    font-weight: 600;
+    color: #E56135;
+}
+
+.post_card_btn_alt{
+    color: #02B875;
+}
+
+.post_card_footer{
+    background-color: white;
+    border-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.post_card_footer_user{
+    display: flex;
+    align-items: center;
+}
+
+.post_card_footer_user img{
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+}
+
+.post_card_footer_user p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.post_card_footer_info_icon{
+    margin-right: 14px;
+}
+
+.post_card_footer_info{
+    color: #525252;
+}
+
+.post_card_footer_btn{
+    background-color: #EDEEF0;
+    margin-left: 40px;
+}
