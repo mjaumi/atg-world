@@ -20,7 +20,7 @@ const PostsContainer = () => {
     return (
         <section className={postsContainerStyle.posts_container_section}>
             <div className='container'>
-                <div className='row'>
+                <div className={`row ${postsContainerStyle.posts_nav_sticky}`}>
                     <div className={postsContainerStyle.posts_nav_container}>
                         <nav className={postsContainerStyle.posts_nav_bar}>
                             <p>All Posts(32)</p>

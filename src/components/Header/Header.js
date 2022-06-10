@@ -5,7 +5,7 @@ import headerStyle from './Header.module.css';
 
 const Header = () => {
     return (
-        <header className='container-fluid'>
+        <header className='container-fluid sticky-top bg-white'>
             <nav className='row p-3 mx-auto'>
                 <div className='col-md-12 d-flex justify-content-between align-items-center'>
                     <div>
