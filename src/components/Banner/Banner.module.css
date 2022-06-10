@@ -1,0 +1,29 @@
+/*---------------------------
+        Banner Design
+----------------------------*/
+.banner{
+    position: relative;
+    background-image: url('../../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    height: 60vh;
+}
+
+.banner_info{
+    position: absolute;
+    bottom: 80px;
+    color: white;
+    text-align: left;
+}
+
+.banner_info h2{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.banner_info p {
+    font-weight: 400;
+    font-size: 18px;
+}
