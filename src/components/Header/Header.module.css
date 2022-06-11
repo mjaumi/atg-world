@@ -31,13 +31,25 @@ nav{
     font-size: 14px;
 }
 
-.create_account_wrapper{
+.create_account_wrapper,
+.user_wrapper{
     display: flex;
     align-items: center;
 }
 
 .create_account_wrapper p{
     font-weight: 700;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.user_wrapper img {
+    height: 36px;
+    width: 36px;
+    margin-right: 12px;
+}
+
+.user_wrapper p {
     margin: 0;
     margin-right: 10px;
 }

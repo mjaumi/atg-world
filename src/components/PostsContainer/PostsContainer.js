@@ -8,17 +8,40 @@ import postsContainerStyle from './PostsContainer.module.css';
 import signInArt from '../../images/signIn.svg';
 import fbIcon from '../../images/fb.svg';
 import googleIcon from '../../images/google.svg';
+import thumbsUp from '../../images/thumbsUp.svg';
 import Post from '../Post/Post';
+import Group from '../Group/Group';
 
-const PostsContainer = () => {
+const PostsContainer = ({ setIsSignedIn, isSignedIn }) => {
     // integration of react hooks here
     const [posts, setPosts] = useState([]);
+    const [groups, setGroups] = useState([]);
 
+    // fetching posts data here
     useEffect(() => {
         fetch('posts.json')
             .then(res => res.json())
             .then(data => setPosts(data));
     }, []);
+
+    // fetching groups data here
+    useEffect(() => {
+        fetch('groups.json')
+            .then(res => res.json())
+            .then(data => setGroups(data));
+    }, []);
+
+    // event handler for sign in
+    const handleSignIn = event => {
+        event.preventDefault();
+
+        const email = event.target.inEmail.value;
+        const password = event.target.inPass.value;
+
+        if (email === 'SiddharthGoyal@gg.com' && password === '123456') {
+            setIsSignedIn(true);
+        }
+    }
 
     // rendering post container component here
     return (
@@ -67,6 +90,26 @@ const PostsContainer = () => {
                                 Your location will help us serve better and extend a personalised experience.
                             </span>
                         </div>
+                        {
+                            isSignedIn &&
+                            <div className={postsContainerStyle.recommended_groups}>
+                                <h6>
+                                    <img className='me-1' src={thumbsUp} alt="" />
+                                    REcommended Groups
+                                </h6>
+                                <div>
+                                    {
+                                        groups.map(group => <Group
+                                            key={group.id}
+                                            group={group}
+                                        />)
+                                    }
+                                </div>
+                                <div className={postsContainerStyle.see_more_btn}>
+                                    <button className='btn btn-link'>See More...</button>
+                                </div>
+                            </div>
+                        }
                     </aside>
                 </div>
 
@@ -141,16 +184,16 @@ const PostsContainer = () => {
                                 </div>
                                 <div className={postsContainerStyle.modal_body_container}>
                                     <div>
-                                        <form>
+                                        <form onSubmit={handleSignIn}>
                                             <div className={postsContainerStyle.modal_form}>
-                                                <input type='email' className={`border-0 border-bottom ${postsContainerStyle.modal_form_control}`} placeholder='Email' />
+                                                <input type='email' name='inEmail' className={`border-0 border-bottom ${postsContainerStyle.modal_form_control}`} placeholder='Email' required />
                                                 <div className={postsContainerStyle.pass_field_container}>
-                                                    <input type='password' className={`border-0 border-bottom ${postsContainerStyle.modal_form_control}`} placeholder='Password' />
+                                                    <input type='password' name='inPass' className={`border-0 border-bottom ${postsContainerStyle.modal_form_control}`} placeholder='Password' required />
                                                     <BsEye className={postsContainerStyle.password_eye} />
                                                 </div>
                                             </div>
                                             <div className={postsContainerStyle.modal_form_submit}>
-                                                <button type='submit' className='btn btn-primary rounded-pill'>Sign In</button>
+                                                <button type='submit' className='btn btn-primary rounded-pill' data-bs-dismiss='modal' aria-label='Close'>Sign In</button>
                                             </div>
                                         </form>
                                         <div className={postsContainerStyle.social_sign_container}>

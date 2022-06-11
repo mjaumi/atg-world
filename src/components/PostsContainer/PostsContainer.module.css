@@ -124,6 +124,27 @@
     margin-left: 10px;
 }
 
+.recommended_groups{
+    position: sticky;
+    top: 369px;
+    width: 250px;
+    margin-top: 55px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.see_more_btn{
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.see_more_btn button{
+    text-decoration: none;
+    padding: 0;
+    font-size: 12px;
+}
+
 /*-----------------------------------
         Modal Design
 -----------------------------------*/

@@ -1,0 +1,29 @@
+/*-----------------------------------
+        Group Design
+-----------------------------------*/
+.group_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.group_container img {
+    height: 36px;
+    width: 36px;
+}
+
+.group_container p{
+    margin: 0;
+    margin-left: 12px;
+}
+
+.follow_btn{
+    background-color: #EDEEF0;
+    padding: 4px 12px;
+}
+
+.followed_btn{
+    background-color: black;
+    color: white;
+}

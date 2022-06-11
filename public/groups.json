@@ -1,0 +1,25 @@
+[
+    {
+        "id": 2001,
+        "groupImg": "https://i.ibb.co/RGKjdnx/image.png",
+        "groupName": "Leisure"
+    },
+
+    {
+        "id": 2002,
+        "groupImg": "https://i.ibb.co/nmtrx4H/image.png",
+        "groupName": "Activism"
+    },
+
+    {
+        "id": 2003,
+        "groupImg": "https://i.ibb.co/yNSRW2f/image.png",
+        "groupName": "MBA"
+    },
+
+    {
+        "id": 2004,
+        "groupImg": "https://i.ibb.co/vxgNYFQ/image.png",
+        "groupName": "Philosophy"
+    }
+]
