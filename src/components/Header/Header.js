@@ -16,7 +16,7 @@ const Header = () => {
                         <input type='text' placeholder='Search for your favorite groups in ATG' />
                     </div>
                     <div className={headerStyle.create_account_wrapper}>
-                        <p>Create account. <span className='text-primary'>It's Free!</span></p>
+                        <p>Create account. <span className='text-primary' data-bs-toggle='modal' data-bs-target='#signupModal'>It's Free!</span></p>
                         <AiFillCaretDown className={headerStyle.caret_down_icon} />
                     </div>
                 </div>

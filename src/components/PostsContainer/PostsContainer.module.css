@@ -123,3 +123,145 @@
     display: inline-block;
     margin-left: 10px;
 }
+
+/*-----------------------------------
+        Modal Design
+-----------------------------------*/
+.modal_content{
+    position: relative;
+    border-radius: 10px;
+}
+
+.modal_header{
+    padding: 20px 0;
+    background-color: #EFFFF4;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal_header p {
+    margin: 0;
+}
+
+.modal_body{
+    padding: 36px;
+    text-align: left;
+}
+
+.modal_body_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_body_header h5{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.modal_body_header p{
+    margin: 0;
+}
+
+.modal_body_header button{
+    font-weight: 700;
+    text-decoration: none;
+    padding-right: 0;
+}
+
+.modal_body_container{
+    display: flex;
+    margin-top: 24px;
+}
+
+.modal_body_container > div{
+    width: 50%;
+}
+
+.modal_form{
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #D9D9DB;
+}
+
+.modal_form_control{
+    width: 100%;
+    padding: 15px 12px;
+    border-radius: 0;
+    outline: none;
+    background-color: #F7F8FA;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #D9D9DB;
+}
+
+.pass_field_container{
+    position: relative;
+}
+
+.password_eye{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    fill: #8a8a8a;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.modal_form_submit button{
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.social_sign_container{
+    margin-top: 24px;
+}
+
+.social_sign_container button{
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #D9D9DB; 
+}
+
+.social_sign_container button + button{
+    margin-top: 10px;
+}
+
+.modal_art{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_art p {
+    text-align: center;
+    font-size: 11px;
+    color: #8c8c8c;
+    margin: 0;
+}
+
+.modal_close_btn{
+    position: absolute;
+    top: -35px;
+    right: -15px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.forgot_pass_btn{
+    width: 100%;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 12px;
+    margin-top: 34px;
+    padding: 0;
+}
